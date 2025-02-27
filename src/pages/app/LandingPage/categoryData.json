@@ -1,0 +1,42 @@
+[
+    {
+      "name": "Design",
+      "jobCount": "235",
+      "icon": "<svg id=\"I1:5830;51:958;51:909\" width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"category-icon\" style=\"width: 100%; height: 100%\"> <g clip-path=\"url(#clip0_320_3736)\"> <path d=\"M6 41.9996H14L40 15.9996C41.0609 14.9388 41.6569 13.4999 41.6569 11.9996C41.6569 10.4993 41.0609 9.06049 40 7.99963C38.9391 6.93876 37.5003 6.34277 36 6.34277C34.4997 6.34277 33.0609 6.93876 32 7.99963L6 33.9996V41.9996Z\" stroke=\"#4640DE\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M29 11L37 19\" stroke=\"#4640DE\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M24 16L14 6L6 14L16 24\" stroke=\"#4640DE\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M14 16L11 19\" stroke=\"#4640DE\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M32 24L42 34L34 42L24 32\" stroke=\"#4640DE\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M32 34L29 37\" stroke=\"#4640DE\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> </g> <defs> <clipPath id=\"clip0_320_3736\"> <rect width=\"48\" height=\"48\" fill=\"white\"></rect> </clipPath> </defs> </svg>"
+    },
+    {
+      "name": "Sales",
+      "jobCount": "756",
+      "icon": "<svg id=\"I1:5830;51:976;51:909\" width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"category-icon\" style=\"width: 100%; height: 100%\"> <path d=\"M14 22C18.4183 22 22 18.4183 22 14C22 9.58172 18.4183 6 14 6C9.58172 6 6 9.58172 6 14C6 18.4183 9.58172 22 14 22Z\" stroke=\"#4640DE\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M14 6V14H22\" stroke=\"#4640DE\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M18 34V42\" stroke=\"#4640DE\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M34 28V42\" stroke=\"#4640DE\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M26 26V42\" stroke=\"#4640DE\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M42 24V42\" stroke=\"#4640DE\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> </svg>"
+    },
+    {
+      "name": "Marketing",
+      "jobCount": "140",
+      "icon": "<svg id=\"I1:5830;51:976;51:909\" width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"category-icon\" style=\"width: 100%; height: 100%\"> <path d=\"M14 22C18.4183 22 22 18.4183 22 14C22 9.58172 18.4183 6 14 6C9.58172 6 6 9.58172 6 14C6 18.4183 9.58172 22 14 22Z\" stroke=\"#4640DE\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M14 6V14H22\" stroke=\"#4640DE\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M18 34V42\" stroke=\"#4640DE\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M34 28V42\" stroke=\"#4640DE\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M26 26V42\" stroke=\"#4640DE\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M42 24V42\" stroke=\"#4640DE\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> </svg>"
+    },
+    {
+      "name": "Finance",
+      "jobCount": "325",
+      "icon": "<svg id=\"I1:5830;51:1037;51:909\" width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"category-icon\" style=\"width: 100%; height: 100%\"> <path d=\"M34 18V14C34 12.9391 33.5786 11.9217 32.8284 11.1716C32.0783 10.4214 31.0609 10 30 10H10C8.93913 10 7.92172 10.4214 7.17157 11.1716C6.42143 11.9217 6 12.9391 6 14V26C6 27.0609 6.42143 28.0783 7.17157 28.8284C7.92172 29.5786 8.93913 30 10 30H14M18 38H38C39.0609 38 40.0783 37.5786 40.8284 36.8284C41.5786 36.0783 42 35.0609 42 34V22C42 20.9391 41.5786 19.9217 40.8284 19.1716C40.0783 18.4214 39.0609 18 38 18H18C16.9391 18 15.9217 18.4214 15.1716 19.1716C14.4214 19.9217 14 20.9391 14 22V34C14 35.0609 14.4214 36.0783 15.1716 36.8284C15.9217 37.5786 16.9391 38 18 38ZM32 28C32 29.0609 31.5786 30.0783 30.8284 30.8284C30.0783 31.5786 29.0609 32 28 32C26.9391 32 25.9217 31.5786 25.1716 30.8284C24.4214 30.0783 24 29.0609 24 28C24 26.9391 24.4214 25.9217 25.1716 25.1716C25.9217 24.4214 26.9391 24 28 24C29.0609 24 30.0783 24.4214 30.8284 25.1716C31.5786 25.9217 32 26.9391 32 28Z\" stroke=\"#4640DE\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> </svg>"
+    },
+    {
+      "name": "Technology",
+      "jobCount": "436",
+      "icon": "<svg id=\"I1:5830;283:6622;51:909\" width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"category-icon\" style=\"width: 100%; height: 100%\"> <path d=\"M19.5 34L18 40L16 42H32L30 40L28.5 34H19.5ZM6 26H42H6ZM10 34H38C39.0609 34 40.0783 33.5786 40.8284 32.8284C41.5786 32.0783 42 31.0609 42 30V10C42 8.93913 41.5786 7.92172 40.8284 7.17157C40.0783 6.42143 39.0609 6 38 6H10C8.93913 6 7.92172 6.42143 7.17157 7.17157C6.42143 7.92172 6 8.93913 6 10V30C6 31.0609 6.42143 32.0783 7.17157 32.8284C7.92172 33.5786 8.93913 34 10 34Z\" stroke=\"#4640DE\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> </svg>"
+    },
+    {
+      "name": "Engineering",
+      "jobCount": "542",
+      "icon": "<svg id=\"I1:5830;283:6623;51:909\" width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"category-icon\" style=\"width: 100%; height: 100%\"> <path d=\"M20 40L28 8M36 16L44 24L36 32M12 32L4 24L12 16\" stroke=\"#4640DE\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> </svg>"
+    },
+    {
+      "name": "Business",
+      "jobCount": "211",
+      "icon": "<svg id=\"I1:5830;283:6624;51:909\" width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"category-icon\" style=\"width: 100%; height: 100%\"> <path d=\"M42 26.51C36.281 28.8225 30.1688 30.0075 24 30C17.634 30 11.56 28.76 6 26.51M24 24H24.02M32 12V8C32 6.93913 31.5786 5.92172 30.8284 5.17157C30.0783 4.42143 29.0609 4 28 4H20C18.9391 4 17.9217 4.42143 17.1716 5.17157C16.4214 5.92172 16 6.93913 16 8V12H32ZM10 40H38C39.0609 40 40.0783 39.5786 40.8284 38.8284C41.5786 38.0783 42 37.0609 42 36V16C42 14.9391 41.5786 13.9217 40.8284 13.1716C40.0783 12.4214 39.0609 12 38 12H10C8.93913 12 7.92172 12.4214 7.17157 13.1716C6.42143 13.9217 6 14.9391 6 16V36C6 37.0609 6.42143 38.0783 7.17157 38.8284C7.92172 39.5786 8.93913 40 10 40Z\" stroke=\"#4640DE\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> </svg>"
+    },
+    {
+      "name": "Human Resource",
+      "jobCount": "346",
+      "icon": "<svg id=\"I1:5830;283:6624;51:909\" width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"category-icon\" style=\"width: 100%; height: 100%\"> <path d=\"M42 26.51C36.281 28.8225 30.1688 30.0075 24 30C17.634 30 11.56 28.76 6 26.51M24 24H24.02M32 12V8C32 6.93913 31.5786 5.92172 30.8284 5.17157C30.0783 4.42143 29.0609 4 28 4H20C18.9391 4 17.9217 4.42143 17.1716 5.17157C16.4214 5.92172 16 6.93913 16 8V12H32ZM10 40H38C39.0609 40 40.0783 39.5786 40.8284 38.8284C41.5786 38.0783 42 37.0609 42 36V16C42 14.9391 41.5786 13.9217 40.8284 13.1716C40.0783 12.4214 39.0609 12 38 12H10C8.93913 12 7.92172 12.4214 7.17157 13.1716C6.42143 13.9217 6 14.9391 6 16V36C6 37.0609 6.42143 38.0783 7.17157 38.8284C7.92172 39.5786 8.93913 40 10 40Z\" stroke=\"#4640DE\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> </svg>"
+    }
+  ]
