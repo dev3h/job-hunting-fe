@@ -10,7 +10,7 @@ const FooterApp = () => {
         <div className='flex flex-col gap-6 lg:gap-0 lg:flex-row justify-between'>
           {/* col 1 */}
           <div className='flex-1'>
-            <img src="/assets/imgs/logos/logo-light.svg" alt="logo" width='150' height='50' />
+            <Link to='/'><img src="/assets/imgs/logos/logo-light.svg" alt="logo" width='150' height='50' /></Link>
             <span className='mt-8 inline-block'>Great platform for the job seeker that passionate about startups. Find your dream job easier.</span>
           </div>
           {/* col 2 */}

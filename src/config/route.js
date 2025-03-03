@@ -10,6 +10,10 @@ const router = createBrowserRouter([
             {
                 path: "",
                 Component: lazy(() => import('@/pages/app/LandingPage'))
+            },
+            {
+                path: "job",
+                Component: lazy(() => import('@/pages/app/JobPage'))
             }
         ]
     }

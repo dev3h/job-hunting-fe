@@ -8,6 +8,7 @@ import {
   DropdownMenuSeparator, 
   DropdownMenuTrigger 
 } from '@/components/ui/dropdown-menu'
+import styled from 'styled-components'
 
 const HeaderApp = ({isLandingPage = false}) => {
   return (
@@ -16,11 +17,11 @@ const HeaderApp = ({isLandingPage = false}) => {
         <div className='flex items-center justify-between'>
           {/* header left */}
           <div className='header-left flex items-center w-1/2'>
-            <img src="/assets/imgs/logos/logo.svg" alt="logo" width='150' height='50' />
+            <Link to='/'><img src="/assets/imgs/logos/logo.svg" alt="logo" width='150' height='50' /></Link>
             <nav id='header-nav' className='ml-12 hidden lg:block'>
               <ul className='flex items-center gap-4'>
-                <li><NavLink  to="/" className="text-txtHeader">Find Jobs</NavLink></li>
-                <li><NavLink  to="/" className="text-txtHeader">Browse Companies</NavLink></li>
+                <li><HeaderNavLink  to="job" className="text-txtHeader">Find Jobs</HeaderNavLink></li>
+                <li><HeaderNavLink  to="/" className="text-txtHeader">Browse Companies</HeaderNavLink></li>
               </ul>
             </nav>
           </div>
@@ -52,5 +53,14 @@ const HeaderApp = ({isLandingPage = false}) => {
 HeaderApp.propTypes = {
   isLandingPage: PropTypes.bool
 }
+const HeaderNavLink = styled(NavLink)`
+  &.active {
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+  }
+  &:not(.active):hover {
+    color: var(--primary);
+  }
+`
 
 export default HeaderApp
