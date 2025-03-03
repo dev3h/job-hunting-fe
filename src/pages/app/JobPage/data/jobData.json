@@ -1,0 +1,101 @@
+[
+    {
+      "id": 1,
+      "title": "Social Media Assistant gfdgdfgfdgfdgdfg",
+      "company": "Nomad",
+      "jobType": "Full Time",
+      "location": "Paris, France",
+      "categories": [
+        { "name": "Marketing", "type": "marketing" },
+        { "name": "Design", "type": "design" }
+      ],
+      "logoUrl": "https://cdn.builder.io/api/v1/image/assets/TEMP/e433c027b4026801292315f8e09b68515b1b4c9bd651f2f2be21f129a7a5aef5?placeholderIfAbsent=true&apiKey=31211b44a8944f769f3027f5bc4d97f5",
+      "applicants": 5,
+      "capacity": 10
+    },
+    {
+      "id": 2,
+      "title": "Brand Designer",
+      "company": "Dropbox",
+      "jobType": "Full Time",
+      "location": "San Fransisco, USA",
+      "categories": [
+        { "name": "Marketing", "type": "marketing" },
+        { "name": "Design", "type": "design" }
+      ],
+      "logoUrl": "https://cdn.builder.io/api/v1/image/assets/TEMP/3a822561dc4ef27a127fd048f4f28cfe62e28c48744880617021a9345bf9e8fa?placeholderIfAbsent=true&apiKey=31211b44a8944f769f3027f5bc4d97f5",
+      "applicants": 2,
+      "capacity": 10
+    },
+    {
+      "id": 3,
+      "title": "Interactive Developer",
+      "company": "Terraform",
+      "jobType": "Full Time",
+      "location": "Hamburg, Germany",
+      "categories": [
+        { "name": "Marketing", "type": "marketing" },
+        { "name": "Design", "type": "design" }
+      ],
+      "logoUrl": "https://cdn.builder.io/api/v1/image/assets/TEMP/f764c35e5d822aed2d8ee4008886c537e6fa22421ade646ae9f89dfc718c3af5?placeholderIfAbsent=true&apiKey=31211b44a8944f769f3027f5bc4d97f5",
+      "applicants": 8,
+      "capacity": 12
+    },
+    {
+      "id": 4,
+      "title": "Email Marketing",
+      "company": "Revolut",
+      "jobType": "Full Time",
+      "location": "Madrid, Spain",
+      "categories": [
+        { "name": "Marketing", "type": "marketing" },
+        { "name": "Design", "type": "design" }
+      ],
+      "logoUrl": "https://cdn.builder.io/api/v1/image/assets/TEMP/b23de2ea27d402611b8b848425bf22fb1b0e803a394fb358d6b09f9a57010df7?placeholderIfAbsent=true&apiKey=31211b44a8944f769f3027f5bc4d97f5",
+      "applicants": 0,
+      "capacity": 10
+    },
+    {
+      "id": 5,
+      "title": "Lead Engineer",
+      "company": "Canva",
+      "jobType": "Full Time",
+      "location": "Ankara, Turkey",
+      "categories": [
+        { "name": "Marketing", "type": "marketing" },
+        { "name": "Design", "type": "design" }
+      ],
+      "logoUrl": "https://cdn.builder.io/api/v1/image/assets/TEMP/cb2c53d18897c2f5cb3b96846b96921df46b6ac3b5014a5f417969f25d677587?placeholderIfAbsent=true&apiKey=31211b44a8944f769f3027f5bc4d97f5",
+      "applicants": 5,
+      "capacity": 10
+    },
+    {
+      "id": 6,
+      "title": "Product Designer",
+      "company": "ClassPass",
+      "jobType": "Full Time",
+      "location": "Berlin, Germany",
+      "categories": [
+        { "name": "Marketing", "type": "marketing" },
+        { "name": "Design", "type": "design" }
+      ],
+      "logoUrl": "https://cdn.builder.io/api/v1/image/assets/TEMP/d73a11dffa52aa8864fc48108e6116b4e963d485f5053238ab3d2cd0ada88f37?placeholderIfAbsent=true&apiKey=31211b44a8944f769f3027f5bc4d97f5",
+      "applicants": 5,
+      "capacity": 10
+    },
+    {
+      "id": 7,
+      "title": "Customer Manager",
+      "company": "Pitch",
+      "jobType": "Full Time",
+      "location": "Berlin, Germany",
+      "categories": [
+        { "name": "Marketing", "type": "marketing" },
+        { "name": "Design", "type": "design" }
+      ],
+      "logoUrl": "https://cdn.builder.io/api/v1/image/assets/TEMP/a2d42cd08254ef21e82fb607cfedc4e5353be6f98e25904c1ef790bfbbb224f6?placeholderIfAbsent=true&apiKey=31211b44a8944f769f3027f5bc4d97f5",
+      "applicants": 5,
+      "capacity": 10
+    }
+]
+  
