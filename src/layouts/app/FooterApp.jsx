@@ -1,7 +1,7 @@
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
 import React from 'react'
 import { Link } from 'react-router'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
 
 const FooterApp = () => {
   return (

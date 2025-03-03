@@ -1,0 +1,94 @@
+[
+    {
+      "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/743cdfdf7c3fcd6bc91487883ed72aea020ef2a69021b812b2ad3135583b0a90?placeholderIfAbsent=true&apiKey=31211b44a8944f769f3027f5bc4d97f5",
+      "jobType": "Full Time",
+      "title": "Email Marketing",
+      "company": "Revolut",
+      "location": "Madrid, Spain",
+      "description": "Revolut is looking for Email Marketing to help team",
+      "categories": [
+        { "name": "Marketing", "type": "marketing" },
+        { "name": "Design", "type": "design" }
+      ]
+    },
+    {
+      "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/47ebf60c3488b848ac28a348dc043927ba196004e03b26476a0434fcd92ca91d?placeholderIfAbsent=true&apiKey=31211b44a8944f769f3027f5bc4d97f5",
+      "jobType": "Full Time",
+      "title": "Brand Designer",
+      "company": "Dropbox",
+      "location": "San Fransisco, US",
+      "description": "Dropbox is looking for Brand Designer to help the team",
+      "categories": [
+        { "name": "Design", "type": "design" },
+        { "name": "Business", "type": "business" }
+      ]
+    },
+    {
+      "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/6589f44ef0e437fad41135066e4a78a554f8d0afae847d456f03a15aceb9d6d5?placeholderIfAbsent=true&apiKey=31211b44a8944f769f3027f5bc4d97f5",
+      "jobType": "Full Time",
+      "title": "Email Marketing",
+      "company": "Pitch",
+      "location": "Berlin, Germany",
+      "description": "Pitch is looking for Customer Manager to join marketing",
+      "categories": [
+        { "name": "Marketing", "type": "marketing" }
+      ]
+    },
+    {
+      "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/78d0335794a50406c8758fd005811a741ee8d7794e181db8ea9939a43849dc44?placeholderIfAbsent=true&apiKey=31211b44a8944f769f3027f5bc4d97f5",
+      "jobType": "Full Time",
+      "title": "Visual Designer",
+      "company": "Blinklist",
+      "location": "Granada, Spain",
+      "description": "Blinkist is looking for Visual Designer to help team",
+      "categories": [
+        { "name": "Design", "type": "design" }
+      ]
+    },
+    {
+        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/d66e100bf3fba56b3cac744c93de2be17399af1d97f1b41b9b471357c7a0b057?placeholderIfAbsent=true&apiKey=31211b44a8944f769f3027f5bc4d97f5",
+        "jobType": "Full Time",
+        "title": "Product Designer",
+        "company": "ClassPass",
+        "location": "Manchester, UK",
+        "description": "ClassPass is looking for Product Designer to help us",
+        "categories": [
+          { "name": "Marketing", "type": "marketing" },
+          { "name": "Design", "type": "design" }
+        ]
+    },
+    {
+        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/ff2cba24ccb344685d74a2ddb7e456a23545d3916622b064ee97688ad5c2f085?placeholderIfAbsent=true&apiKey=31211b44a8944f769f3027f5bc4d97f5",
+        "jobType": "Full Time",
+        "title": "Lead Designer",
+        "company": "Canva",
+        "location": "Ontario, Canada",
+        "description": "Canva is looking for Lead Engineer to help develop",
+        "categories": [
+            { "name": "Design", "type": "design" },
+            { "name": "Business", "type": "business" }
+        ]
+    },
+    {
+        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/39b194ce0b672b38080d677aa3fe6f065f23bf55ecc9ade9605a72aa8a201d18?placeholderIfAbsent=true&apiKey=31211b44a8944f769f3027f5bc4d97f5",
+        "jobType": "Full Time",
+        "title": "Brand Strategist",
+        "company": "GoDaddy",
+        "location": "Marseille, France",
+        "description": "GoDaddy is looking for Brand Strategist to join the team",
+        "categories": [
+            { "name": "Marketing", "type": "marketing" }
+        ]
+        },
+    {
+        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/84d1b0ef7c2c8244b8a59b3273c95ab1aa634883810742023f59202687d1da5f?placeholderIfAbsent=true&apiKey=31211b44a8944f769f3027f5bc4d97f5",
+        "jobType": "Full Time",
+        "title": "Data Analyst",
+        "company": "Twitter",
+        "location": "San Diego, US",
+        "description": "Twitter is looking for Data Analyst to help team desi",
+        "categories": [
+            { "name": "Technology", "type": "technology" }
+        ]
+    }
+]
