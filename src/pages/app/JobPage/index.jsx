@@ -27,10 +27,10 @@ const JobSearchPage = () => {
 
     return (
     <>
-        <div className="bg-[#f8f8fd] py-[40px] lg:py-[82px]">
+        <div className="bg-grayF8 py-[40px] lg:py-[82px]">
             <div className='container mx-auto px-5'>
                 <div>
-                    <h3 className="text-[#25324B] flex flex-col lg:flex-row gap-3 w-full text-center lg:text-left justify-center font-bold text-[48px] lg:text-[72px]">
+                    <h3 className="text-black25 flex flex-col lg:flex-row gap-3 w-full text-center lg:text-left justify-center font-bold text-[48px] lg:text-[72px]">
                         <span>Find your </span>
                         <div className='text-[#26A4FF] w-fit'>
                             <span>dream job</span>

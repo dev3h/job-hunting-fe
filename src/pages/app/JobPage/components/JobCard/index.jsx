@@ -2,11 +2,18 @@ import React from "react";
 import PropTypes from "prop-types";
 import JobApplicationStatus from "./JobApplicationStatus";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router";
 
 function JobCard({ job, className = "", jobLayout }) {
+  let navigate = useNavigate();
+
+  const openDetailPage = (id) => {
+    navigate(`/job/${id}`);
+  };
   return (
     <div
-      className={`flex flex-col lg:flex-row gap-10 justify-between p-6 w-full bg-white border border-solid border-[color:var(--Neutrals-20,#D6DDEB)] max-md:px-5 ${className}`}
+      onClick={() => openDetailPage(job?.id)}
+      className={`flex flex-col lg:flex-row gap-10 justify-between p-6 w-full bg-white border border-solid border-txtFooter max-md:px-5 ${className}`}
     >
       <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 items-start my-auto font-semibold min-w-60">
         <img
@@ -50,6 +57,7 @@ function JobCard({ job, className = "", jobLayout }) {
 }
 JobCard.propTypes = {
   job: PropTypes.shape({
+    id: PropTypes.string.isRequired,
     logoUrl: PropTypes.string.isRequired,
     company: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
