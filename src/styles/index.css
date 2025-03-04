@@ -41,6 +41,8 @@
     --footer: #202430;
     --txtFooter: #D6DDEB;
     --txtHeader: #515B6F;
+    --grayF8: #F8F8FD;
+    --black25: #25324B;
 }
 
 .dark {
@@ -79,6 +81,8 @@
     --footer: #202430;
     --txtFooter: #D6DDEB;
     --txtHeader: #fff;
+    --grayF8: #F8F8FD;
+    --black25: #25324B;
 }
 
 @theme inline {
@@ -121,6 +125,8 @@
     --color-footer: var(--footer);
     --color-txtFooter: var(--txtFooter);
     --color-txtHeader: var(--txtHeader);
+    --color-grayF8: var(--grayF8);
+    --color-black25: var(--black25);
 }
 
 @layer base {

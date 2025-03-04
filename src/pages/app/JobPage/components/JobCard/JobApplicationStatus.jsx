@@ -27,7 +27,7 @@ JobApplicationStatus.propTypes = {
 };
 const ProcessBar = styled.div`
     position: relative;
-    background-color: #D6DDEB;
+    background-color: var(--txtFooter);
     height: 5px;
     &:before {
         content: "";

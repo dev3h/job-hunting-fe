@@ -12,7 +12,7 @@ const JobCard = ({
   isShowDescription = true
 }) => {
   return (
-    <div className="flex flex-col p-6 bg-white border border-txtFooter max-md:px-5 cursor-pointer transition-all hover:scale-105">
+    <div className="flex flex-col p-6 bg-white border border-txtFooter rounded-sm max-md:px-5 cursor-pointer transition-all hover:scale-105">
       <header className="flex gap-10 justify-between items-start w-full text-base text-center text-primary">
         <img
           src={logoSrc}

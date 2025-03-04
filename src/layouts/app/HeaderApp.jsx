@@ -12,7 +12,7 @@ import styled from 'styled-components'
 
 const HeaderApp = ({isLandingPage = false}) => {
   return (
-    <header className={`h-[78px] flex items-center ${isLandingPage ? 'bg-[#f8f8fd]' : 'bg-#fff'}`}>
+    <header className={`h-[78px] flex items-center ${isLandingPage ? 'bg-grayF8' : 'bg-#fff'}`}>
       <div className='container mx-auto px-5'>
         <div className='flex items-center justify-between'>
           {/* header left */}
@@ -30,7 +30,7 @@ const HeaderApp = ({isLandingPage = false}) => {
             <div className='flex items-center'>
               <Link to="/" className='text-primary py-3 px-6 inline-block'>Login</Link>
               <div className='mx-2 h-full w-[2px] bg-txtFooter'></div>
-              <Link to="/" className='text-white py-3 px-6 inline-block bg-primary'>Sign Up</Link>
+              <Link to="/" className='text-white py-3 px-6 inline-block bg-primary rounded-sm'>Sign Up</Link>
             </div>
           </div>
           <div className="lg:hidden">
@@ -54,6 +54,7 @@ HeaderApp.propTypes = {
   isLandingPage: PropTypes.bool
 }
 const HeaderNavLink = styled(NavLink)`
+  padding-bottom: 12px;
   &.active {
     color: var(--primary);
     border-bottom: 2px solid var(--primary);

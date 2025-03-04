@@ -23,12 +23,12 @@ const LandingPage = () => {
   }, [])
   return (
     <>
-      <div className="bg-[#f8f8fd] py-[82px]">
+      <div className="bg-grayF8 py-[82px]">
         <div className='container mx-auto px-5'>
           <div>
             <div className="flex flex-col max-w-[500px]">
-              <h3 className="text-[#25324B] font-bold text-[48px] lg:text-[72px]">Discover</h3>
-              <h3 className="text-[#25324B] font-bold text-[48px] lg:text-[72px]">more than</h3>
+              <h3 className="text-black25 font-bold text-[48px] lg:text-[72px]">Discover</h3>
+              <h3 className="text-black25 font-bold text-[48px] lg:text-[72px]">more than</h3>
               <h3 className="text-[#26A4FF] font-bold text-[48px] lg:text-[72px]">5000+Jobs</h3>
               <img src='/assets/imgs/svg/line.svg' alt='' width='100' height='50' className='w-full' />
             </div>
@@ -115,7 +115,7 @@ const LandingPage = () => {
         </div>
       </div>
       {/* last jobs open */}
-      <div className='pb-[48px] pt-5 lg:py-[48px] bg-[#f8f8fd]'>
+      <div className='pb-[48px] pt-5 lg:py-[48px] bg-grayF8'>
         <div className='container mx-auto px-5'>
           <div className='flex flex-col lg:flex-row gap-3 lg:gap-0 lg:items-center justify-between mb-6 lg:mb-[48px]'>
             <h3 className='text-[48px] font-bold'>

@@ -14,6 +14,10 @@ const router = createBrowserRouter([
             {
                 path: "job",
                 Component: lazy(() => import('@/pages/app/JobPage'))
+            },
+            {
+                path: "job/:id",
+                Component: lazy(() => import('@/pages/app/JobDetailPage'))
             }
         ]
     }
