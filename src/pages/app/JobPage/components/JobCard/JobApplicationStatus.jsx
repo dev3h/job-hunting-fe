@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 function JobApplicationStatus({ applicants, capacity }) {
     const percentage = useMemo(() => {
+        if(isNaN(applicants) || isNaN(capacity) || capacity === 0) return 0;
         return (applicants / capacity) * 100;
     }
     , [applicants, capacity]);
