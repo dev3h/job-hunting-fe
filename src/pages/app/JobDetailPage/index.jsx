@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Button } from '@/components/ui/button'
+
 import { Link, useNavigate, useParams } from 'react-router'
 import styled from 'styled-components'
 import JobApplicationStatus from '../JobPage/components/JobCard/JobApplicationStatus'
@@ -7,13 +7,27 @@ import JobData from '../JobPage/data/jobData.json'
 import JobSimilar from '../LandingPage/jobData.json'
 import JobCard from '../LandingPage/components/job-section/JobCard'
 
+
+import DialogApplication from './DialogApplication'
+import { Button } from '@/components/ui/button'
+
+
 const JobDetailPage = () => {
     const params = useParams()
     const navigate = useNavigate()
+    
     const [job, setJob] = useState({})
     const [jobSimilar, setJobSimilar] = useState([])
+    const [isDialogApplicationOpen, setIsDialogApplicationOpen] = useState(false)
 
     const currentId = params?.id
+    const handleOpenApplicationDialog = () => {
+        setIsDialogApplicationOpen(true)
+    }
+    const handleCloseApplicationDialog = () => {
+        setIsDialogApplicationOpen(false)
+    }
+
     useEffect(() => {
         const detail = JobData?.find(job => job?.id === +currentId)
         if(!detail) {
@@ -42,7 +56,7 @@ const JobDetailPage = () => {
                         <div className='flex items-center gap-3 mt-5 lg:mt-0'>
                             <img src="/assets/imgs/svg/share.svg" className='hidden lg:inline-block' alt="" width='20' height='20' />
                             <div className='border h-9 bg-txtFooter hidden lg:block'></div>
-                            <Button size='lg' className='w-full'>Apply</Button>
+                            <Button size='lg' className='w-full' onClick={() => handleOpenApplicationDialog()}>Apply</Button>
                         </div>
                     </div>
                 </div>
@@ -145,6 +159,7 @@ const JobDetailPage = () => {
                 </div>
                 </div>
             </div>
+            {isDialogApplicationOpen && <DialogApplication isOpen={isDialogApplicationOpen} closeDialog={handleCloseApplicationDialog} job={job} />}
         </>
     )
 }
