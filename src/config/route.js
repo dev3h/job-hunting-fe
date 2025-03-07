@@ -1,6 +1,7 @@
 import {lazy} from 'react'
 import LayoutApp from '@/layouts/app'
 import {createBrowserRouter} from 'react-router'
+import AuthAppLayout from '@/layouts/auth/app'
 
 const router = createBrowserRouter([
     {
@@ -18,6 +19,20 @@ const router = createBrowserRouter([
             {
                 path: "job/:id",
                 Component: lazy(() => import('@/pages/app/JobDetailPage'))
+            }
+        ]
+    },
+    {
+        path: "/auth",
+        Component: AuthAppLayout,
+        children: [
+            {
+                path: 'register',
+                Component: lazy(() => import('@/pages/auth/Register'))
+            },
+            {
+                path: 'login',
+                Component: lazy(() => import('@/pages/auth/Login'))
             }
         ]
     }

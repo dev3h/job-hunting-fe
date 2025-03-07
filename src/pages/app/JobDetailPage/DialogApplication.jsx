@@ -20,8 +20,8 @@ import { z } from 'zod'
 import { Toaster } from '@/components/ui/sonner'
 
 const FormSchema = z.object({
-    username: z.string().min(2, {
-      message: "Username must be at least 2 characters.",
+    name: z.string().min(2, {
+      message: "name must be at least 2 characters.",
     }),
 })
 
@@ -40,8 +40,8 @@ const DialogApplication = ({job, isOpen, closeDialog}) => {
         },
     })
     const onSubmit = (data) => {
-            console.log(data)
-        }
+        console.log(data)
+    }
     const [file, setFile] = useState(null);
 
     const handleFileChange = (event) => {
