@@ -2,6 +2,7 @@ import {lazy} from 'react'
 import LayoutApp from '@/layouts/app'
 import {createBrowserRouter} from 'react-router'
 import AuthAppLayout from '@/layouts/auth/app'
+import DashboardLayout from '@/layouts/dashboard'
 
 const router = createBrowserRouter([
     {
@@ -33,6 +34,20 @@ const router = createBrowserRouter([
             {
                 path: 'login',
                 Component: lazy(() => import('@/pages/auth/Login'))
+            }
+        ]
+    },
+    {
+        path: "/dashboard",
+        Component: DashboardLayout,
+        children: [
+            {
+                path: '',
+                Component: lazy(() => import('@/pages/app/Dashboard/Home'))
+            },
+            {
+                path: 'message',
+                Component: lazy(() => import('@/pages/app/Dashboard/Home'))
             }
         ]
     }
