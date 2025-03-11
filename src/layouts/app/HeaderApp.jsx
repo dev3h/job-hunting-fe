@@ -28,9 +28,9 @@ const HeaderApp = ({isLandingPage = false}) => {
           {/* header right */}
           <div className='header-right flex-1 justify-end hidden lg:flex'>
             <div className='flex items-center'>
-              <Link to="/" className='text-primary py-3 px-6 inline-block'>Login</Link>
+              <Link to="/auth/login" className='text-primary py-3 px-6 inline-block'>Login</Link>
               <div className='mx-2 h-full w-[2px] bg-txtFooter'></div>
-              <Link to="/" className='text-white py-3 px-6 inline-block bg-primary rounded-sm'>Sign Up</Link>
+              <Link to="/auth/register" className='text-white py-3 px-6 inline-block bg-primary rounded-sm'>Sign Up</Link>
             </div>
           </div>
           <div className="lg:hidden">

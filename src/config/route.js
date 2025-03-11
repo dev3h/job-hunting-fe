@@ -1,6 +1,8 @@
 import {lazy} from 'react'
 import LayoutApp from '@/layouts/app'
 import {createBrowserRouter} from 'react-router'
+import AuthAppLayout from '@/layouts/auth/app'
+import DashboardLayout from '@/layouts/dashboard'
 
 const router = createBrowserRouter([
     {
@@ -18,6 +20,62 @@ const router = createBrowserRouter([
             {
                 path: "job/:id",
                 Component: lazy(() => import('@/pages/app/JobDetailPage'))
+            }
+        ]
+    },
+    {
+        path: "/auth",
+        Component: AuthAppLayout,
+        children: [
+            {
+                path: 'register',
+                Component: lazy(() => import('@/pages/auth/Register'))
+            },
+            {
+                path: 'login',
+                Component: lazy(() => import('@/pages/auth/Login'))
+            }
+        ]
+    },
+    {
+        path: "/job-seeker",
+        Component: DashboardLayout,
+        children: [
+            {
+                path: 'dashboard',
+                Component: lazy(() => import('@/pages/app/Dashboard/Home'))
+            },
+            {
+                path: 'message',
+                Component: lazy(() => import('@/pages/app/Dashboard/Home'))
+            }
+        ]
+    },
+    {
+        path: "/employee",
+        Component: DashboardLayout,
+        children: [
+            {
+                path: 'dashboard',
+                Component: lazy(() => import('@/pages/app/Dashboard/Home'))
+            },
+            {
+                path: 'message',
+                Component: lazy(() => import('@/pages/app/Dashboard/Home'))
+            }
+        ]
+    },
+    {
+        path: "/admin",
+        Component: DashboardLayout,
+        children: [
+            {
+                path: 'dashboard',
+                Component: lazy(() => import('@/pages/app/Dashboard/Home'))
+            },
+            {
+                path: 'message',
+                Component: lazy(() => import('@/pages/app/Dashboard/Home'))
             }
         ]
     }
