@@ -14,17 +14,13 @@ import {
   SidebarFooter,
   SidebarHeader,
   SidebarRail,
+  useSidebar,
 } from "@/components/ui/sidebar"
-import { USER_MENU } from "@/constants/menu"
+import { ADMIN_MENU, EMPLOYEE_MENU, USER_MENU } from "@/constants/menu"
 import { useLocation } from "react-router"
 
 // This is sample data.
 const data = {
-  user: {
-    name: "shadcn",
-    email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg",
-  },
   teams: [
     {
       name: "Acme Inc",
@@ -45,32 +41,40 @@ const data = {
 }
 
 export function AppSidebar({
-  ...props
+  user, ...props
 }) {
   const [sidebarData, setSidebarData] = useState([]);
+  const sidebarContext = useSidebar();
   let location = useLocation();
-  useEffect(()=> {
-    const path = location.pathname.split("/")[2];
-    const userSideBar = USER_MENU?.map((item) => {
-      return {...item, children: item.children?.map((child) => {
-        if (child.pathActive === path) {
-          child.isActive = true;
-        }
-        return child;
-      })};
-    });
-    setSidebarData(userSideBar);
+  useEffect(() => {
+    const pathName = location.pathname.split("/");
+    let activeMenu = USER_MENU;
+    if (location.pathname.startsWith('/employee')) {
+      activeMenu = EMPLOYEE_MENU;
+    } else if (location.pathname.startsWith('/admin')) {
+      activeMenu = ADMIN_MENU;
+    }
+
+    const updatedSidebar = activeMenu?.map((item) => ({
+      ...item,
+      children: item.children?.map((child) => ({
+        ...child,
+        isActive: pathName.includes(child.pathActive),
+      })),
+    }));
+
+    setSidebarData(updatedSidebar);
   }, [location]);
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
-        <TeamSwitcher teams={data.teams} />
+        {sidebarContext?.state === 'expanded' ? <img src="/assets/imgs/logos/logo.svg" alt="" width='150' height='50' /> : <img src="/assets/imgs/logos/logo-small.svg" alt="" width='50' height='50' />}
       </SidebarHeader>
       <SidebarContent>
         <NavMain sidebarData={sidebarData} />
       </SidebarContent>
       <SidebarFooter>
-        <NavUser user={data.user} />
+        <NavUser user={user} />
       </SidebarFooter>
       <SidebarRail />
     </Sidebar>

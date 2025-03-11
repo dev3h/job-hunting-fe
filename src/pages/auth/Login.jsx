@@ -1,13 +1,14 @@
-import { Button } from '@/components/ui/button';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
 import React, {useState} from 'react'
-import { useForm } from 'react-hook-form'
-import { zodResolver } from "@hookform/resolvers/zod"
-import { z } from 'zod'
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 import ROUTES from '@/constants/routes';
 import axiosInstance from '@/config/axios';
+import { useEmployeeStore, useJobSeekerStore } from '@/config/store';
+import { useCustomForm } from '@/hooks/use-custom-form';
+import { LoginSchema } from '@/utils/formSchemas';
+import { API_AUTH } from '@/constants/api';
 
 function TabMenu({ activeTab, onTabChange }) {
     const tabs = ["Job Seeker", "Company"];
@@ -15,16 +16,11 @@ function TabMenu({ activeTab, onTabChange }) {
     return (
       <div className="flex justify-center items-center">
         {tabs.map((tab) => (
-          <button
-            key={tab}
-            className={`px-3 py-2 text-base font-bold ${
+          <button key={tab} className={`px-3 py-2 text-base font-bold ${
               activeTab === tab ? "border-b-2 bg-grayF8 border-primary text-primary" : ""
             }`}
-            onClick={() => onTabChange(tab)}
-            aria-selected={activeTab === tab}
-            role="tab"
-          >
-            {tab}
+            onClick={() => onTabChange(tab)} aria-selected={activeTab === tab} role="tab"
+          >{tab}
           </button>
         ))}
       </div>
@@ -34,51 +30,37 @@ function TabMenu({ activeTab, onTabChange }) {
 function TermsText() {
     return (
       <p className="text-sm leading-6 text-slate-500">
-        By clicking 'Continue', you acknowledge that you have read and accept the
-        <a href="#" className="text-indigo-600 no-underline">
-          Terms of Service
-        </a>
-        and
-        <a href="#" className="text-indigo-600 no-underline">
-          Privacy Policy
-        </a>
-        .
+        <span>By clicking 'Continue', you acknowledge that you have read and accept the</span>
+        <a href="#" className="text-primary ml-[5px]">Terms of Service</a>
+        <span className='mx-[5px]'>and</span>
+        <a href="#" className="text-primary">Privacy Policy.</a>
       </p>
     );
 }
 
-const FormSchema = z.object({
-    email: z.string().email({
-      message: "Please enter a valid email address.",
-    }),
-    password: z.string().min(8, {
-        message: "Password must be at least 8 characters.",
-    }),
-})
-
 const LoginPage = () => {
-    const form = useForm({
-        resolver: zodResolver(FormSchema),
-        defaultValues: {
-            email: "",
-            password: "",
-        },
-    })
-    const [activeTab, setActiveTab] = useState("Job Seeker");
-
-    const onSubmit = async (values) => {
-        try {
-            const response = await axiosInstance.post('/auth/login', values)
-            console.log(response)   
-        } catch (error) {
-            if(error?.response?.status === 422) {
-                form.setError('email', {
-                    type: 'custom',
-                    message: error?.response?.data?.errors?.email?.[0]
-                })
-            }
-        }
+    let navigate = useNavigate();
+    const loginHandler = async (values) => {
+      const routePath = activeTab === 'Job Seeker' ? API_AUTH?.JOB_SEEKER?.LOGIN : API_AUTH?.EMPLOYEE?.LOGIN;
+      const response = await axiosInstance.post(routePath, values)
+      if(response?.data?.status === 200) {
+        const data = response?.data?.data;
+        store.setToken(data?.access_token)
+        const routeNavigate = activeTab === 'Job Seeker' ? ROUTES?.JOB_SEEKER?.DASHBOARD : ROUTES?.EMPLOYEE?.DASHBOARD;
+        navigate(routeNavigate);
+      }
     }
+
+    const { form, isLoadingForm, onSubmit } = useCustomForm({
+      schema: LoginSchema,
+      defaultValues: { email: "", password: "" },
+      onSubmitHandler: loginHandler,
+    });
+
+    const [activeTab, setActiveTab] = useState("Job Seeker");
+    const jobSeekerStore = useJobSeekerStore();
+    const employeeStore = useEmployeeStore();
+    const store = activeTab === "Job Seeker" ? jobSeekerStore : employeeStore;
 
     return (
       <div className="flex flex-col gap-6 items-center w-1/2 py-9 mx-auto my-0 bg-white">
@@ -131,7 +113,7 @@ const LoginPage = () => {
                         </FormItem>
                     )}
                 />
-                <Button size='lg' type="submit" className='w-full'>Login</Button>
+                <Button disabled={isLoadingForm} size='lg' type="submit" className='w-full'>Login</Button>
             </form>
         </Form>
   

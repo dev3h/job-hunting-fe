@@ -4,13 +4,13 @@ const USER_MENU = [
         children: [
             {
                 title: "Dashboard",
-                url: "/dashboard",
+                url: "/job-seeker/dashboard",
                 icon: 'home.svg',
                 pathActive: 'dashboard'
             },
             {
                 title: "Messages",
-                url: "/dashboard/message",
+                url: "/job-seeker/message",
                 icon: 'message.svg',
                 pathActive: 'message'
             },
@@ -59,4 +59,91 @@ const USER_MENU = [
     }
 ]
 
-export { USER_MENU }
+const EMPLOYEE_MENU = [
+    {
+        group: null,
+        children: [
+            {
+                title: "Dashboard",
+                url: "/employee/dashboard",
+                icon: 'home.svg',
+                pathActive: 'dashboard'
+            },
+            {
+                title: "Messages",
+                url: "/employee/message",
+                icon: 'message.svg',
+                pathActive: 'message'
+            },
+            {
+                title: "Company Profile",
+                url: "#",
+                icon: 'application.svg',
+                pathActive: 'application'
+            },
+            {
+                title: "All Applications",
+                url: "#",
+                icon: 'findjob.svg',
+                pathActive: 'job'
+            },
+            {
+                title: "Job Listing",
+                url: "#",
+                icon: 'company.svg',
+                pathActive: 'company'
+            },
+            {
+                title: "My Schedule",
+                url: "#",
+                icon: 'profile.svg',
+                pathActive: 'profile'
+            },
+        ]
+    },
+    {
+        group: "Settings",
+        children: [
+            {
+                title: "Settings",
+                url: "#",
+                icon: 'setting.svg',
+                pathActive: 'setting'
+            },
+            {
+                title: "Help Center",
+                url: "#",
+                icon: 'help.svg',
+                pathActive: 'help'
+            },
+        ]
+    }
+]
+
+const ADMIN_MENU = [
+    {
+        group: null,
+        children: [
+            {
+                title: "Dashboard",
+                url: "/admin/dashboard",
+                icon: 'home.svg',
+                pathActive: 'dashboard'
+            },
+            {
+                title: "Messages",
+                url: "/admin/message",
+                icon: 'message.svg',
+                pathActive: 'message'
+            },
+            {
+                title: "Company",
+                url: "#",
+                icon: 'application.svg',
+                pathActive: 'application'
+            },
+        ]
+    }
+]
+
+export { USER_MENU, EMPLOYEE_MENU, ADMIN_MENU }

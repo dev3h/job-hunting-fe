@@ -38,11 +38,39 @@ const router = createBrowserRouter([
         ]
     },
     {
-        path: "/dashboard",
+        path: "/job-seeker",
         Component: DashboardLayout,
         children: [
             {
-                path: '',
+                path: 'dashboard',
+                Component: lazy(() => import('@/pages/app/Dashboard/Home'))
+            },
+            {
+                path: 'message',
+                Component: lazy(() => import('@/pages/app/Dashboard/Home'))
+            }
+        ]
+    },
+    {
+        path: "/employee",
+        Component: DashboardLayout,
+        children: [
+            {
+                path: 'dashboard',
+                Component: lazy(() => import('@/pages/app/Dashboard/Home'))
+            },
+            {
+                path: 'message',
+                Component: lazy(() => import('@/pages/app/Dashboard/Home'))
+            }
+        ]
+    },
+    {
+        path: "/admin",
+        Component: DashboardLayout,
+        children: [
+            {
+                path: 'dashboard',
                 Component: lazy(() => import('@/pages/app/Dashboard/Home'))
             },
             {
