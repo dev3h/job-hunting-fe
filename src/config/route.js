@@ -62,6 +62,14 @@ const router = createBrowserRouter([
             {
                 path: 'message',
                 Component: lazy(() => import('@/pages/app/Dashboard/Home'))
+            },
+            {
+                path: 'job',
+                Component: lazy(() => import('@/pages/employee/Job'))
+            },
+            {
+                path: 'job/create',
+                Component: lazy(() => import('@/pages/employee/Job/CreateEditForm'))
             }
         ]
     },

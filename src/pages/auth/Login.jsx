@@ -40,6 +40,7 @@ function TermsText() {
 
 const LoginPage = () => {
     let navigate = useNavigate();
+    
     const loginHandler = async (values) => {
       const routePath = activeTab === 'Job Seeker' ? API_AUTH?.JOB_SEEKER?.LOGIN : API_AUTH?.EMPLOYEE?.LOGIN;
       const response = await axiosInstance.post(routePath, values)

@@ -1,3 +1,5 @@
+import ROUTES from "./routes"
+
 const USER_MENU = [
     {
         group: null,
@@ -79,19 +81,19 @@ const EMPLOYEE_MENU = [
                 title: "Company Profile",
                 url: "#",
                 icon: 'application.svg',
-                pathActive: 'application'
+                pathActive: 'company-profile'
             },
             {
                 title: "All Applications",
                 url: "#",
                 icon: 'findjob.svg',
-                pathActive: 'job'
+                pathActive: 'application'
             },
             {
                 title: "Job Listing",
-                url: "#",
+                url: ROUTES.EMPLOYEE.JOB.LIST,
                 icon: 'company.svg',
-                pathActive: 'company'
+                pathActive: 'job'
             },
             {
                 title: "My Schedule",
