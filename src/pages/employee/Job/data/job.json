@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "Jake Gyll",
+        "score": 100,
+        "hiring_stage": "Interview",
+        "application_date": "2021-09-01",
+        "job_role": "Software Engineer"
+    },
+    {
+        "id": 2,
+        "name": "John Doe",
+        "score": 90,
+        "hiring_stage": "Interview",
+        "application_date": "2021-09-01",
+        "job_role": "Software Engineer"
+    },
+    {
+        "id": 3,
+        "name": "Jane Doe",
+        "score": 80,
+        "hiring_stage": "Interview",
+        "application_date": "2021-09-01",
+        "job_role": "Software Engineer"
+    },
+    {
+        "id": 4,
+        "name": "John Doe",
+        "score": 70,
+        "hiring_stage": "Interview",
+        "application_date": "2021-09-01",
+        "job_role": "Software Engineer"
+    },
+    {
+        "id": 5,
+        "name": "Jane Doe",
+        "score": 60,
+        "hiring_stage": "Interview",
+        "application_date": "2021-09-01",
+        "job_role": "Software Engineer"
+    }
+]

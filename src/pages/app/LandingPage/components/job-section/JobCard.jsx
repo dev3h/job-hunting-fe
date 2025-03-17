@@ -31,7 +31,7 @@ const JobCard = ({
           <span>{location}</span>
         </div>
       </div>
-      {isShowDescription ? <p className="mt-4 text-base text-[#7C8493] line-clamp-2">{description}</p> : null}
+      {isShowDescription ? <p className="mt-4 text-base text-gray7C line-clamp-2">{description}</p> : null}
       <div className="flex gap-2 items-start mt-4 text-sm font-semibold whitespace-nowrap">
         {categories.map((category, index) => (
           <span key={index} className="text-slate-800">{category?.name}</span>

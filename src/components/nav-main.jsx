@@ -83,9 +83,9 @@ export function NavMain({
 
 const SideBarMenuItemCustom = styled(SidebarMenuItem)`
   &.active {
-    background-color: #E9EBFD;
+    background-color: var(--grayE9);
     &:hover a {
-      background-color: #E9EBFD !important;
+      background-color: var(--grayE9) !important;
     }
     & img {
       filter: brightness(0) saturate(100%) invert(18%) sepia(82%) saturate(5222%) hue-rotate(244deg) brightness(92%) contrast(87%);

@@ -43,6 +43,8 @@
     --txtHeader: #515B6F;
     --grayF8: #F8F8FD;
     --black25: #25324B;
+    --grayE9: #E9EBFD;
+    --gray7C: #7C8493;
 }
 
 .dark {
@@ -83,6 +85,8 @@
     --txtHeader: #fff;
     --grayF8: #F8F8FD;
     --black25: #25324B;
+    --grayE9: #E9EBFD;
+    --gray7C: #7C8493;
 }
 
 @theme inline {
@@ -127,6 +131,8 @@
     --color-txtHeader: var(--txtHeader);
     --color-grayF8: var(--grayF8);
     --color-black25: var(--black25);
+    --color-grayE9: var(--grayE9);
+    --color-gray7C: var(--gray7C);
 }
 
 @layer base {

@@ -11,7 +11,11 @@ const ROUTES = {
     },
     EMPLOYEE: {
         'DASHBOARD': '/employee/dashboard',
-        'MESSAGE': '/employee/message'
+        'MESSAGE': '/employee/message',
+        'JOB': {
+            'LIST': '/employee/job',
+            'CREATE': '/employee/job/create'
+        }
     }
 }
 export default ROUTES
