@@ -13,10 +13,12 @@ import JobData from './jobData.json'
 import { Link } from 'react-router'
 import CategoryCard from './components/category-section/CategoryCard'
 import JobCard from './components/job-section/JobCard'
+import ROUTES from '@/constants/routes'
 
 const LandingPage = () => {
   const [categories, setCategories] = useState([])
   const [jobs, setJobs] = useState([])
+  const jobRoute = ROUTES.LANDING.JOB
   useEffect(() => {
     setCategories(CategoryData)
     setJobs(JobData)
@@ -81,7 +83,7 @@ const LandingPage = () => {
               <span className='text-footer'>Explore by </span>
               <span className='text-primary'>category</span>
             </h3>
-            <Link to='/' className='flex gap-1 items-center text-primary font-bold'>
+            <Link to={jobRoute} className='flex gap-1 items-center text-primary font-bold'>
               <span>Show all jobs</span> 
               <img src="/assets/imgs/svg/arrow-right.svg" alt="" width="20" height="20" style={{filter: "brightness(0) saturate(100%) invert(25%) sepia(37%) saturate(5487%) hue-rotate(237deg) brightness(86%) contrast(102%)"}} />
             </Link>
@@ -102,7 +104,7 @@ const LandingPage = () => {
               <span className='text-footer'>Featured </span>
               <span className='text-primary'>jobs</span>
             </h3>
-            <Link to='/' className='flex gap-1 items-center text-primary font-bold'>
+            <Link to={jobRoute} className='flex gap-1 items-center text-primary font-bold'>
               <span>Show all jobs</span> 
               <img src="/assets/imgs/svg/arrow-right.svg" alt="" width="20" height="20" style={{filter: "brightness(0) saturate(100%) invert(25%) sepia(37%) saturate(5487%) hue-rotate(237deg) brightness(86%) contrast(102%)"}} />
             </Link>
@@ -122,7 +124,7 @@ const LandingPage = () => {
               <span className='text-footer'>Latest </span>
               <span className='text-primary'>jobs open</span>
             </h3>
-            <Link to='/' className='flex gap-1 items-center text-primary font-bold'>
+            <Link to={jobRoute} className='flex gap-1 items-center text-primary font-bold'>
               <span>Show all jobs</span> 
               <img src="/assets/imgs/svg/arrow-right.svg" alt="" width="20" height="20" style={{filter: "brightness(0) saturate(100%) invert(25%) sepia(37%) saturate(5487%) hue-rotate(237deg) brightness(86%) contrast(102%)"}} />
             </Link>

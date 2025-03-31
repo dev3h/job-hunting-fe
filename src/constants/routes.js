@@ -5,6 +5,9 @@ const ROUTES = {
             'REGISTER': '/auth/register'
         }
     },
+    LANDING: {
+        'JOB': '/job',
+    },
     JOB_SEEKER: {
         'DASHBOARD': '/job-seeker/dashboard',
         'MESSAGE': '/job-seeker/message'

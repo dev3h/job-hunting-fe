@@ -158,7 +158,7 @@ const JobScreen = () => {
   }, [])
   return (
     <div className='px-4'>
-      <div className='flex items-center w-1/2 gap-5'>
+      <div className='flex items-center w-1/2 gap-5 mb-6'>
         <h3 className='font-bold w-1/2'>Total Applicants: {jobList?.length}</h3>
         <div className='flex-1'>
           <Input placeholder="Search Applicants" />
