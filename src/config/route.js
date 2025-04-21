@@ -68,6 +68,10 @@ const router = createBrowserRouter([
                 Component: lazy(() => import('@/pages/employee/Application'))
             },
             {
+                path: "application/:id",
+                Component: lazy(() => import('@/pages/employee/Application/DetailApplication'))
+            },
+            {
                 path: 'job',
                 Component: lazy(() => import('@/pages/employee/Job'))
             },

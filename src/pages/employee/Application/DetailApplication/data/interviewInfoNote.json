@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "avatar": "/assets/imgs/logos/logo-small.svg",
+        "name": "Jerome Bell",
+        "date": "10 July, 2021 . 11:30 AM",
+        "content": "Please, do an interview stage immediately. The design division needs more new employee now",
+        "children": [
+            {
+                "id": 2,
+                "avatar": "/assets/imgs/logos/logo-small.svg",
+                "name": "Maria Kelly",
+                "date": "10 July, 2021 . 11:30 AM",
+                "content": "Please, do an interview stage immediately. "
+            },
+            {
+                "id": 3,
+                "avatar": "/assets/imgs/logos/logo-small.svg",
+                "name": "Maria Kelly",
+                "date": "10 July, 2021 . 11:30 AM",
+                "content": "Please"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "avatar": "/assets/imgs/logos/logo-small.svg",
+        "name": "Maria Kelly",
+        "date": "10 July, 2021 . 11:30 AM",
+        "content": "Please, do an interview stage immediately. ",
+        "children": []
+    }
+]

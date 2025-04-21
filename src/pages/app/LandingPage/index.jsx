@@ -31,7 +31,7 @@ const LandingPage = () => {
             <div className="flex flex-col max-w-[500px]">
               <h3 className="text-black25 font-bold text-[48px] lg:text-[72px]">Discover</h3>
               <h3 className="text-black25 font-bold text-[48px] lg:text-[72px]">more than</h3>
-              <h3 className="text-[#26A4FF] font-bold text-[48px] lg:text-[72px]">5000+Jobs</h3>
+              <h3 className="text-blue26 font-bold text-[48px] lg:text-[72px]">5000+Jobs</h3>
               <img src='/assets/imgs/svg/line.svg' alt='' width='100' height='50' className='w-full' />
             </div>
             <span className='text-[#515B6F] text-xl max-w-[500px] inline-block my-6'>

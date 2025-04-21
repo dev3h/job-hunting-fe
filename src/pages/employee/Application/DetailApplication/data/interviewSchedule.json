@@ -1,0 +1,49 @@
+[
+    {
+        "date": "Tomorrow - 10 July, 2021",
+        "schedules": [
+            {
+                "id": 1,
+                "avatar": "/assets/imgs/logos/logo-small.svg",
+                "name": "Kathryn Murphy",
+                "exam": "Written Test",
+                "time": "10:00 AM - 11:30 AM",
+                "place": "Silver Crysta Room, Nomad"
+            },
+            {
+                "id": 2,
+                "avatar": "/assets/imgs/logos/logo-small.svg",
+                "name": "Thad Eddings",
+                "exam": "Skill Test",
+                "time": "10:00 AM - 11:30 AM",
+                "place": "Silver Crysta Room, Nomad"
+            }
+        ]
+    },
+    {
+        "date": "11 July, 2021",
+        "schedules": [
+            {
+                "id": 3,
+                "avatar": "/assets/imgs/logos/logo-small.svg",
+                "name": "Jenny Wilson",
+                "exam": "Written Test 2",
+                "time": "10:00 AM - 11:30 AM",
+                "place": "Silver Crysta Room, Nomad"
+            }
+        ]
+    },
+    {
+        "date": "12 July, 2021",
+        "schedules": [
+            {
+                "id": 4,
+                "avatar": "/assets/imgs/logos/logo-small.svg",
+                "name": "Cody Fisher",
+                "exam": "Written Test 3",
+                "time": "10:00 AM - 11:30 AM",
+                "place": "Silver Crysta Room, Nomad"
+            }
+        ]
+    }
+]
