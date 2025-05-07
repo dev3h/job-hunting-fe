@@ -1,0 +1,22 @@
+{
+    "date": "10 - 13 July 2021",
+    "status": "On Progress",
+    "location": "Silver Crysta Room, Nomad Office 3517 W. Gray St. Utica, Pennsylvania 57867",
+    "assigned_to": [
+      {
+        "name": "Jerome Bell",
+        "position": "Product Designer",
+        "avatar": "/assets/imgs/logos/logo-small.svg"
+      },
+      {
+        "name": "Jerome Bell",
+        "position": "Product Designer",
+        "avatar": "/assets/imgs/logos/logo-small.svg"
+      },
+      {
+        "name": "Jerome Bell",
+        "position": "Product Designer",
+        "avatar": "/assets/imgs/logos/logo-small.svg"
+      }
+    ]
+  }

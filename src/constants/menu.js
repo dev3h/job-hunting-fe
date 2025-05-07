@@ -85,7 +85,7 @@ const EMPLOYEE_MENU = [
             },
             {
                 title: "All Applications",
-                url: "#",
+                url: "/employee/application",
                 icon: 'findjob.svg',
                 pathActive: 'application'
             },

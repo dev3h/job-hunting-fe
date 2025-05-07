@@ -45,6 +45,7 @@
     --black25: #25324B;
     --grayE9: #E9EBFD;
     --gray7C: #7C8493;
+    --blue26: #26A4FF;
 }
 
 .dark {
@@ -87,6 +88,7 @@
     --black25: #25324B;
     --grayE9: #E9EBFD;
     --gray7C: #7C8493;
+    --blue26: #26A4FF;
 }
 
 @theme inline {
@@ -133,6 +135,7 @@
     --color-black25: var(--black25);
     --color-grayE9: var(--grayE9);
     --color-gray7C: var(--gray7C);
+    --color-blue26: #26A4FF;
 }
 
 @layer base {

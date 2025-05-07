@@ -32,7 +32,7 @@ const JobSearchPage = () => {
                 <div>
                     <h3 className="text-black25 flex flex-col lg:flex-row gap-3 w-full text-center lg:text-left justify-center font-bold text-[48px] lg:text-[72px]">
                         <span>Find your </span>
-                        <div className='text-[#26A4FF] w-fit'>
+                        <div className='text-blue26 w-fit'>
                             <span>dream job</span>
                             <img src='/assets/imgs/svg/line.svg' alt='' width='100' height='50' className='w-full' />
                         </div>
